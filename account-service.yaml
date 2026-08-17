@@ -1,0 +1,17 @@
+server:
+  port: 9010
+  servlet:
+    context-path: /account
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/codepilot-account-db
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: sk_test_51TYt6bB6no4rTnMP4kJS32MKzwRJ0FhOBdZIdt9gtZKmZpYEzbvuyh6imMTB2Z7qQazKMMdeYrKLBuilmJoUyhp6000GR1WRk5
+  webhook:
+    secret: whsec_426689a7ef53f458e635d12cdcd55ed528f560bc37356398bae80ca623acce33 
