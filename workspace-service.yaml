@@ -1,6 +1,6 @@
 server:
   port: 9010
-  servlet.context-path: workspace
+  servlet.context-path: /workspace
 
 spring:
   datasource:
