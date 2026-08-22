@@ -1,6 +1,6 @@
 server:
   port: 9030
-  context-path: /intelligence
+  servlet.context-path: /intelligence
 
 spring:
   datasource:
