@@ -1,0 +1,20 @@
+server:
+  port: 9030
+  context-path: /intelligence
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/codepilot-intelligence-db
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  ai:
+    openai:
+      api-key: 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
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: google/gemini-3-flash-preview
+          temperature: 0.0
+    
