@@ -22,7 +22,7 @@ spring:
             - StripPrefix=2
 
         # Intelligence Service (context-path: /intelligence)
-        - id: inteligence-service
+        - id: intelligence-service
           uri: lb://intelligence-service
           predicates: 
             - Path=/api/v1/intelligence/**
