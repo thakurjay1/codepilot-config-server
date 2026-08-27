@@ -15,7 +15,7 @@ spring:
       base-url: https://openrouter.ai/api/v1       # Fixed: Appended /v1
       chat:
         options:
-          model: openrouter/free      # Verified OpenRouter model ID
+          model: nvidia/nemotron-3-ultra-550b-a55b:free      # Verified OpenRouter model ID
           temperature: 0.0
 
 
