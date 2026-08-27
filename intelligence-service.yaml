@@ -10,11 +10,15 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   ai:
-    openai:
+    model.chat: openai
+    openai: 
       api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
           model: google/gemma-4-26b-a4b-it:free
-          temperature: 0.0
+          temperature: 0.2
+      embedding:
+        options:
+          model: google/gemma-4-26b-a4b-it:free
     
