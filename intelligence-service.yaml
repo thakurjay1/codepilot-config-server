@@ -18,4 +18,11 @@ spring:
         options:
           model: google/gemini-3-flash-preview
           temperature: 0.0
-    
+
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    org.springframework.ai.openai: DEBUG
+    com.openai: DEBUG
+    okhttp3: DEBUG
