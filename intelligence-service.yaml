@@ -10,13 +10,12 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   ai:
-    model.chat: openai
     openai: 
       api-key: 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
-      base-url: https://openrouter.ai/api
+      base-url: https://openrouter.ai/api/v1       # Fixed: Appended /v1
       chat:
         options:
-          model: google/gemini-3-flash-preview
+          model: google/gemini-3-flash-preview     # Verified OpenRouter model ID
           temperature: 0.0
 
 
