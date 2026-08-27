@@ -18,7 +18,4 @@ spring:
         options:
           model: google/gemma-4-26b-a4b-it:free
           temperature: 0.2
-      embedding:
-        options:
-          model: google/gemma-4-26b-a4b-it:free
     
