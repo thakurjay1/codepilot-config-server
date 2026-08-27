@@ -15,7 +15,7 @@ spring:
       base-url: https://openrouter.ai/api/v1       # Fixed: Appended /v1
       chat:
         options:
-          model: google/gemma-4-26b-a4b-it:free     # Verified OpenRouter model ID
+          model: meta-llama/llama-3.2-3b-instruct:free     # Verified OpenRouter model ID
           temperature: 0.0
 
 
