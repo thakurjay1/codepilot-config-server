@@ -11,11 +11,12 @@ spring:
 
   ai:
     openai: 
-      api-key: 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
+      #api-key: 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
+      api-key: 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
       base-url: https://openrouter.ai/api/v1       # Fixed: Appended /v1
       chat:
         options:
-          model: nvidia/nemotron-3-ultra-550b-a55b:free      # Verified OpenRouter model ID
+          model: google/gemini-3-flash-preview      # Verified OpenRouter model ID
           temperature: 0.0
 
 
