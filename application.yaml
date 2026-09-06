@@ -8,6 +8,19 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: false
 
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer: 
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: codepilot-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.support.serializer.JsonDeserializer
+      properties: 
+        spring.json.trusted.packages: com.vortex.distributed_codepilot.*
+
 eureka:
   client:
     serviceUrl: 
