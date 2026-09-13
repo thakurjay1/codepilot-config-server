@@ -15,3 +15,21 @@ stripe:
     secret: sk_test_51TYt6bB6no4rTnMP4kJS32MKzwRJ0FhOBdZIdt9gtZKmZpYEzbvuyh6imMTB2Z7qQazKMMdeYrKLBuilmJoUyhp6000GR1WRk5
   webhook:
     secret: whsec_426689a7ef53f458e635d12cdcd55ed528f560bc37356398bae80ca623acce33 
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+  datasource:
+    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5434/account-db
+    username: account_user
+    password: ${DB_PASSWORD}
+
+stripe:
+  api:
+    secret: ${STRIPE_API_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
+      
