@@ -23,7 +23,7 @@ spring:
     activate:
       on-profile: k8s
   datasource:
-    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5434/account-db
+    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5432/account-db
     username: account_user
     password: ${DB_PASSWORD}
 
