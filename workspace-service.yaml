@@ -26,8 +26,8 @@ spring:
     activate:
       on-profile: k8s
   datasource:
-    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5434/workspace-db
-    username: workspace-user 
+    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5432/workspace_db
+    username: workspace_user 
     password: ${DB_PASSWORD}
   data: 
     redis: 
