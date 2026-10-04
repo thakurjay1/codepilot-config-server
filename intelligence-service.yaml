@@ -33,7 +33,7 @@ spring:
     activate:
       on-profile: k8s
   datasource:
-    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5434/intelligence-db
+    url: jdbc:postgresql://pgvector.codepilot-core.svc.cluster.local:5432/intelligence_db
     username: intelligence-user
     password: ${DB_PASSWORD}
   ai:
